@@ -1,7 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
-import time
 import numpy as np
 import pandas as pd
 from math import sqrt
@@ -27,7 +26,7 @@ price_ratio_list = 100 * price_ratio_list
 
 st.title('Impermanent Loss Visualization')
 
-asset_name = st.text_input("Asset", value="DAI")
+asset_name = st.text_input("Asset", value="ETH")
 asset_price_change=st.number_input("Price Change %", value=0.0, min_value=-100.0, max_value=400.0)
 
 if asset_name:
